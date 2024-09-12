@@ -30,7 +30,7 @@ pipeline {
             steps {
                 echo 'This is Build stage'
                 echo "Executing command: ${params.COMMAND}"
-				dir('/home/ubuntu/jenkins/workspace/parameterized_pipeline/abc/') {
+				dir('/home/ubuntu/jenkins/') {
 					sh "${params.COMMAND}"
 				}
             }
